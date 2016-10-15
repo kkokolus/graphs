@@ -1,0 +1,9 @@
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\bin\Debug\Graph_WF.exe.config
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\obj\Debug\Graph_WF.csprojResolveAssemblyReference.cache
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\obj\Debug\Graph_WF.Form1.resources
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\obj\Debug\Graph_WF.Properties.Resources.resources
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\obj\Debug\Graph_WF.csproj.GenerateResource.Cache
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\bin\Debug\Graph_WF.exe
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\bin\Debug\Graph_WF.pdb
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\obj\Debug\Graph_WF.exe
+C:\Users\P\Desktop\AuTG\Graph_WF\Graph_WF\obj\Debug\Graph_WF.pdb

@@ -33,7 +33,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.vertexes = new System.Windows.Forms.TextBox();
             this.dane = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.drw = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.visualization)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,7 +59,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.drw);
             this.panel1.Controls.Add(this.vertexes);
             this.panel1.Controls.Add(this.dane);
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -86,12 +86,15 @@
             this.dane.TabIndex = 1;
             this.dane.Text = "Dane:";
             // 
-            // textBox1
+            // drw
             // 
-            this.textBox1.Location = new System.Drawing.Point(456, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(197, 20);
-            this.textBox1.TabIndex = 3;
+            this.drw.Location = new System.Drawing.Point(440, 27);
+            this.drw.Name = "drw";
+            this.drw.Size = new System.Drawing.Size(75, 23);
+            this.drw.TabIndex = 3;
+            this.drw.Text = "Rysuj";
+            this.drw.UseVisualStyleBackColor = true;
+            this.drw.Click += new System.EventHandler(this.drw_Click);
             // 
             // Form1
             // 
@@ -118,7 +121,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label dane;
         private System.Windows.Forms.TextBox vertexes;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button drw;
     }
 }
 

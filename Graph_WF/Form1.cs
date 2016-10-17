@@ -25,7 +25,7 @@ namespace Graph_WF
 
         }
 
-        string[] num_of_vert;
+        string [] num_of_vert = { "1" };
         int alpha;
         Random r = new Random();
         // Generowanie punktow na okregu
@@ -33,6 +33,7 @@ namespace Graph_WF
         Dictionary<Point, int> points = new Dictionary<Point, int>();
         List<Point> list_of_points;
         List<int> list_of_values;
+        
 
         /* public void Punkty()
          {
@@ -166,23 +167,18 @@ namespace Graph_WF
 
         public void draw()
         {
+            
             Pen pen = new Pen(Color.LightSlateGray, 2);
             Graphics g = visualization.CreateGraphics();
 
-            
-
             for (int i = 0; i < num_of_vert.Length-1; i++)
             {
-                
-
                 for (int j = 1; j < list_of_values[i]+1; j++)
                 {
                     g.DrawLine(pen, list_of_points[i], list_of_points[j]);
                 }
-
-                
-            }
-           
+                               
+            }         
 
         }
 
@@ -236,12 +232,35 @@ namespace Graph_WF
         {
 
         }
-
-        private void drw_Click(object sender, EventArgs e)
+        public void clr()
         {
-            generate_points();
-            draw();
+            visualization.Image = null;
+            Array.Clear(num_of_vert, 0, num_of_vert.Length - 1);
+            list_of_points.Clear();
+            list_of_values.Clear();
+            points.Clear();
 
         }
-    }}
+        private void drw_Click(object sender, EventArgs e)
+        {
+
+            /*  visualization.Image = null;
+              Array.Clear(num_of_vert, 0, num_of_vert.Length);
+              list_of_points.Clear();
+              list_of_values.Clear(); */
+
+          //  clr();
+            generate_points();
+            draw();
+            
+
+
+
+
+
+        }
+
+  
+    }
+}
 

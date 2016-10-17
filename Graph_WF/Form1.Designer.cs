@@ -31,9 +31,9 @@
             this.visualization = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.drw = new System.Windows.Forms.Button();
             this.vertexes = new System.Windows.Forms.TextBox();
             this.dane = new System.Windows.Forms.Label();
-            this.drw = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.visualization)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -41,16 +41,18 @@
             // 
             // visualization
             // 
+            this.visualization.BackColor = System.Drawing.Color.Linen;
             this.visualization.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.visualization.Location = new System.Drawing.Point(0, 81);
             this.visualization.Name = "visualization";
-            this.visualization.Size = new System.Drawing.Size(400, 581);
+            this.visualization.Size = new System.Drawing.Size(400, 442);
             this.visualization.TabIndex = 0;
             this.visualization.TabStop = false;
             this.visualization.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.NavajoWhite;
             this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -68,9 +70,20 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.visualization_Paint);
             // 
+            // drw
+            // 
+            this.drw.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.drw.Location = new System.Drawing.Point(488, 16);
+            this.drw.Name = "drw";
+            this.drw.Size = new System.Drawing.Size(114, 41);
+            this.drw.TabIndex = 3;
+            this.drw.Text = "Rysuj";
+            this.drw.UseVisualStyleBackColor = true;
+            this.drw.Click += new System.EventHandler(this.drw_Click);
+            // 
             // vertexes
             // 
-            this.vertexes.Location = new System.Drawing.Point(110, 27);
+            this.vertexes.Location = new System.Drawing.Point(172, 27);
             this.vertexes.Name = "vertexes";
             this.vertexes.Size = new System.Drawing.Size(287, 20);
             this.vertexes.TabIndex = 2;
@@ -79,28 +92,18 @@
             // dane
             // 
             this.dane.AutoSize = true;
-            this.dane.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
-            this.dane.Location = new System.Drawing.Point(33, 27);
+            this.dane.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.dane.Location = new System.Drawing.Point(36, 23);
             this.dane.Name = "dane";
-            this.dane.Size = new System.Drawing.Size(58, 22);
+            this.dane.Size = new System.Drawing.Size(130, 24);
             this.dane.TabIndex = 1;
-            this.dane.Text = "Dane:";
-            // 
-            // drw
-            // 
-            this.drw.Location = new System.Drawing.Point(440, 27);
-            this.drw.Name = "drw";
-            this.drw.Size = new System.Drawing.Size(75, 23);
-            this.drw.TabIndex = 3;
-            this.drw.Text = "Rysuj";
-            this.drw.UseVisualStyleBackColor = true;
-            this.drw.Click += new System.EventHandler(this.drw_Click);
+            this.dane.Text = "Wierzchołki:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 662);
+            this.ClientSize = new System.Drawing.Size(984, 523);
             this.Controls.Add(this.visualization);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";

@@ -160,26 +160,27 @@ namespace Graph_WF
 
             list_of_points = points.Keys.ToList();
             list_of_values = points.Values.ToList();
+            
         }
 
 
         public void draw()
         {
-            Pen pen = new Pen(Color.Green);
+            Pen pen = new Pen(Color.LightSlateGray, 2);
             Graphics g = visualization.CreateGraphics();
 
-            int j;
+            
 
-            for (int i = 0; i < num_of_vert.Length; i++)
+            for (int i = 0; i < num_of_vert.Length-1; i++)
             {
-                j = 1;
+                
 
-                for (; j < list_of_values[i]+1; j++)
+                for (int j = 1; j < list_of_values[i]+1; j++)
                 {
                     g.DrawLine(pen, list_of_points[i], list_of_points[j]);
                 }
 
-                j++;
+                
             }
            
 

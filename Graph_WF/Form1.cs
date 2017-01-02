@@ -153,15 +153,17 @@ namespace Graph_WF
         public void generate_points()
         {
             num_of_vert = Regex.Split(vertexes.Text, ", ");
-            
-            foreach (string v in num_of_vert)
-            {
-                points.Add(random_point(), Convert.ToInt32(v));
-            }
 
-            list_of_points = points.Keys.ToList();
-            list_of_values = points.Values.ToList();
-            
+            if (num_of_vert.Length > 1)
+            {
+                foreach (string v in num_of_vert)
+                {
+                    points.Add(random_point(), Convert.ToInt32(v));
+                }
+
+                list_of_points = points.Keys.ToList();
+                list_of_values = points.Values.ToList();
+            }
         }
 
 

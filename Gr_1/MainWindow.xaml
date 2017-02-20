@@ -1,0 +1,29 @@
+﻿<Window x:Class="Gr_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gr_1"
+        mc:Ignorable="d"
+        Title="Grafy" Height="600" Width="800">
+    <Grid x:Name="grd">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="50*"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="Auto" MinHeight="484"/>
+
+        </Grid.RowDefinitions>
+        <TextBox x:Name="wpiszWierzcholki" HorizontalAlignment="Center" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="101" FontFamily="Tahoma" FontSize="18" Grid.Column="1" TextAlignment="Center" Margin="253,42,241,0"/>
+        <Button x:Name="podanyGraf" Content="Rysuj" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="75" Click="podanyGraf_Click" Height="20" Grid.Column="1" Margin="267,82,253,0"/>
+        <Canvas x:Name="can" HorizontalAlignment="Center" Height="409" Margin="44,121,46,-37" VerticalAlignment="Top" Width="702" Grid.ColumnSpan="3"/>
+        <Label x:Name="label" Content="Wprowadź 5-elementowy ciąg wierzchołków o wartości mniejszej niż 5 oddzielonych spacją:" HorizontalAlignment="Center" Margin="10,10,0,0" VerticalAlignment="Top" Width="585" FontFamily="Tahoma" FontSize="14" Height="27" Grid.Column="1" Grid.Row="1"/>
+
+
+
+    </Grid>
+</Window>

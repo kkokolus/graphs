@@ -1,0 +1,13 @@
+C:\Users\P\Desktop\graphs\Gr_1\bin\Debug\Gr_1.exe.config
+C:\Users\P\Desktop\graphs\Gr_1\bin\Debug\Gr_1.exe
+C:\Users\P\Desktop\graphs\Gr_1\bin\Debug\Gr_1.pdb
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\MainWindow.g.cs
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\App.g.cs
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Gr_1_MarkupCompile.cache
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Gr_1_MarkupCompile.lref
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\MainWindow.baml
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Gr_1.g.resources
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Gr_1.Properties.Resources.resources
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Graphs.csproj.GenerateResource.Cache
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Gr_1.exe
+C:\Users\P\Desktop\graphs\Gr_1\obj\Debug\Gr_1.pdb

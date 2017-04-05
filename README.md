@@ -1,1 +1,1 @@
-Error handling is not fully implemented
+Exeption handling is not fully implemented
